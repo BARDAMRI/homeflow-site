@@ -8,3 +8,7 @@ and run `npm run site:publish`; do not edit files here by hand.
 - `privacy.html`: privacy policy (Hebrew and English)
 - `data-deletion.html`: how to delete the account and data (Hebrew and English)
 - `index.html`, `style.css`: landing page and styles
+
+The web version of the app is published under `app/` (https://bardamri.github.io/homeflow-site/app/). It is **built** from the client code by
+`npm run site:publish -- --app` (and by `scripts/deploy-nas.sh`), not stored in the `site/` folder. Without a public API address it is a
+development preview that runs without a server (no accounts, shop prices or assistant).
