@@ -50,9 +50,7 @@ canvas#fx{position:fixed;inset:0;width:100%;height:100%;pointer-events:none;z-in
 .win{animation:blink 5s infinite;transform-origin:center}
 @keyframes blink{0%,100%{fill:#33406F}45%{fill:#FFD27A}55%{fill:#FFD27A}}
 .truck{animation:drive 22s linear infinite}
-@keyframes drive{from{transform:translateX(-260px)}to{transform:translateX(1500px)}}
-html[dir=rtl] .truck{animation-name:driveRtl}
-@keyframes driveRtl{from{transform:translateX(1500px) scaleX(-1)}to{transform:translateX(-260px) scaleX(-1)}}
+@keyframes drive{from{transform:translateX(-280px)}to{transform:translateX(1540px)}}
 .cloud{animation:float 38s linear infinite;opacity:.18}
 @keyframes float{from{transform:translateX(-200px)}to{transform:translateX(1400px)}}
 .orbs{position:absolute;inset:0;z-index:1;pointer-events:none}
@@ -222,7 +220,7 @@ html.calm *{animation:none!important;transition:none!important}html.calm .reveal
     </div>
   </div>
   <div class="scene" aria-hidden="true">
-    <svg viewBox="0 0 1440 230" preserveAspectRatio="xMidYMax slice">
+    <svg viewBox="0 0 1440 230" preserveAspectRatio="xMidYMax slice" style="direction:ltr">
       <g class="cloud"><ellipse cx="200" cy="40" rx="70" ry="18" fill="#fff"/><ellipse cx="240" cy="30" rx="44" ry="16" fill="#fff"/></g>
       <g class="cloud" style="animation-delay:-18s;animation-duration:52s"><ellipse cx="600" cy="70" rx="90" ry="20" fill="#fff"/><ellipse cx="650" cy="58" rx="50" ry="16" fill="#fff"/></g>
       <g fill="#16224f"><rect x="40" y="90" width="90" height="140"/><rect x="150" y="60" width="70" height="170"/><rect x="240" y="110" width="110" height="120"/><rect x="380" y="70" width="80" height="160"/><rect x="900" y="80" width="100" height="150"/><rect x="1020" y="100" width="80" height="130"/><rect x="1120" y="55" width="90" height="175"/><rect x="1230" y="95" width="120" height="135"/></g>
@@ -230,7 +228,14 @@ html.calm *{animation:none!important;transition:none!important}html.calm .reveal
       <g><polygon points="520,230 520,150 600,100 680,150 680,230" fill="#243475"/><polygon points="505,152 600,92 695,152" fill="#5B3FE0"/><rect x="578" y="170" width="44" height="60" rx="6" fill="#FFB547"/><rect x="540" y="165" width="28" height="28" rx="4" class="win"/><rect x="632" y="165" width="28" height="28" rx="4" class="win" style="animation-delay:-2s"/><circle cx="612" cy="202" r="3" fill="#7a4a00"/></g>
       <g><polygon points="740,230 740,170 800,130 860,170 860,230" fill="#1f2d68"/><polygon points="728,172 800,122 872,172" fill="#2F63F0"/><rect x="788" y="190" width="24" height="40" rx="4" fill="#20C997"/><rect x="752" y="184" width="22" height="22" rx="4" class="win" style="animation-delay:-3s"/></g>
       <rect y="214" width="1440" height="16" fill="#0A0F24"/><rect y="221" width="1440" height="2" fill="#2d3a73" stroke-dasharray="18 14" stroke="#7d8ac8"/>
-      <g class="truck"><rect x="0" y="184" width="70" height="32" rx="4" fill="#fff"/><rect x="70" y="194" width="32" height="22" rx="4" fill="#FFB547"/><rect x="76" y="198" width="14" height="9" fill="#cfe0ff"/><circle cx="20" cy="218" r="8" fill="#10163a" stroke="#fff" stroke-width="2"/><circle cx="84" cy="218" r="8" fill="#10163a" stroke="#fff" stroke-width="2"/><text x="10" y="205" font-size="13" font-weight="800" fill="#2F63F0" font-family="Arial">HomeFlow</text></g>
+      <g class="truck">
+        <rect x="0" y="180" width="156" height="36" rx="5" fill="#fff"/>
+        <rect x="0" y="206" width="156" height="10" rx="0" fill="#E3E7EF"/>
+        <g transform="translate(9 186) scale(.5)"><rect width="48" height="48" rx="13" fill="url(#lg)"/><path d="M11 23.5 24 12l13 11.5" stroke="#fff" stroke-width="3.6" stroke-linecap="round" stroke-linejoin="round" fill="none"/><path d="m19.6 28.6 3.3 3.3 6-6.4" stroke="#fff" stroke-width="3.6" stroke-linecap="round" stroke-linejoin="round" fill="none"/></g>
+        <text x="40" y="203" font-size="17" font-weight="800" fill="#2F63F0" font-family="Arial,sans-serif" textLength="108" lengthAdjust="spacingAndGlyphs">HomeFlow</text>
+        <rect x="156" y="194" width="36" height="22" rx="5" fill="#FFB547"/><rect x="164" y="198" width="18" height="10" rx="2" fill="#cfe0ff"/>
+        <circle cx="30" cy="218" r="9" fill="#10163a" stroke="#fff" stroke-width="2.4"/><circle cx="130" cy="218" r="9" fill="#10163a" stroke="#fff" stroke-width="2.4"/><circle cx="178" cy="218" r="9" fill="#10163a" stroke="#fff" stroke-width="2.4"/>
+      </g>
     </svg>
   </div>
 </section>
