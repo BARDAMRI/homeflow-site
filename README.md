@@ -1,7 +1,7 @@
-# HomeFlow public pages
+# Bayito public pages
 
 Static pages for the app's privacy policy and data-deletion instructions (required by Facebook, Google and Apple).
-Published with GitHub Pages from this repository. **The source of truth is the `site/` folder of the main HomeFlow repository**: edit it there
+Published with GitHub Pages from this repository. **The source of truth is the `site/` folder of the main Bayito repository**: edit it there
 and run `npm run site:publish`; do not edit files here by hand.
 
 - `terms.html`: terms of service (Hebrew and English)
