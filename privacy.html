@@ -21,7 +21,7 @@
     <li><b>החשבון:</b> אימייל, שם, תמונת פרופיל (אם יש), אופן ההרשמה (אימייל, Google, Apple או Facebook), שפה, ותאריכי כניסה. סיסמה נשמרת רק בצורה מגובבת (hash) ולא ניתן לקרוא אותה.</li>
     <li><b>כניסה עם Facebook:</b> אנחנו מקבלים ממנה את המזהה שלכם, השם, תמונת הפרופיל והאימייל (אם אישרתם לשתף אותו). משתמשים בזה רק כדי ליצור חשבון, להכניס אתכם ולהתאים אישית את האפליקציה. איננו מפרסמים בשמכם, קוראים את החברים שלכם או ניגשים למידע אחר בפייסבוק. <b>איננו שולחים דיוור שיווקי לכתובת שהגיעה מפייסבוק, ואיננו מעבירים אותה, את השם או את התמונה לשותפים או למפרסמים.</b> אותו עיקרון חל על Google ו-Apple לגבי הכניסה.</li>
     <li><b>מה שסיפרתם לנו על הדירה:</b> סוג הנכס, מספר חדרים, ילדים, חיות מחמד, מרפסת וגינה, תחומי עניין, ודרישות לקניות שבחרתם לשמור.</li>
-    <li><b>מה שהזנתם באפליקציה:</b> משימות שסימנתם, אנשי קשר, יומן שיחות והודעות, מדריכים שהתחלתם, תקציב ומקורות מימון, סל קניות, תרחישי משכנתא ופרטי הטופס למשכנתא. <b>קבצים ומסמכים שאתם שומרים באפליקציה נשארים על המכשיר או בדפדפן שלכם ואינם נשלחים אלינו ואינם נשמרים בשרת.</b></li>
+    <li><b>מה שהזנתם באפליקציה:</b> משימות שסימנתם, אנשי קשר, יומן שיחות והודעות, מדריכים שהתחלתם, תקציב ומקורות מימון, סל קניות, תרחישי משכנתא ופרטי הטופס למשכנתא. <b>קבצים ומסמכים שאתם שומרים באפליקציה נשארים על המכשיר או בדפדפן שלכם ואינם נשלחים אלינו ואינם נשמרים בשרת. היוצא מן הכלל היחיד: כשאתם בוחרים לצרף קבצים לבקשה לבנק, נשמר עבורו עותק זמני ומוצפן (ראו למטה).</b></li>
     <li><b>סטטיסטיקות שימוש:</b> אירועים כמו &quot;נפתחה הצעה בחנות&quot; או &quot;נפתח מסך&quot;. נשמרים <b>רק אם הסכמתם</b> ל&quot;ניתוח שימוש אנונימי&quot;, ואף פעם בלי תוכן (בלי שמות, טקסטים או סכומים אישיים).</li>
     <li><b>אישור תנאי השימוש:</b> נשמרים גרסת התנאים שאישרתם ותאריך האישור.</li>
     <li><b>רישום להתעדכנות:</b> אם השארתם אימייל כדי לקבל עדכונים לפני ההשקה, נשמרים האימייל ותשובות סוג הדירה שמילאתם.</li>
@@ -48,7 +48,8 @@
 
   <h2>מי רואה את המידע</h2>
   <ul>
-    <li><b>אנחנו</b>, בשרתים שאנחנו מפעילים (כרגע בישראל). קבצים ומסמכים שאתם שומרים באפליקציה אינם נשמרים אצלנו: הם נשארים במכשיר שלכם.</li>
+    <li><b>אנחנו</b>, בשרתים שאנחנו מפעילים (כרגע בישראל). קבצים ומסמכים שאתם שומרים באפליקציה אינם נשמרים אצלנו: הם נשארים במכשיר שלכם, חוץ מעותק זמני של קבצים שבחרתם לשלוח לבנק (ראו למטה).</li>
+    <li><b>בנק או גורם שבחרתם לשלוח לו בקשה</b> – מקבל את פרטי הבקשה שאישרתם, ואם צירפתם קבצים, קישור חתום להורדת עותק זמני ומוצפן שלהם. העותק נמחק אוטומטית אחרי 14 ימים (ברירת המחדל; מוצג באפליקציה), וגם כשאתם מוחקים אותו באפליקציה, מבטלים את ההסכמה לשיתוף או מוחקים את החשבון. אם הבנק כבר הוריד את הקבצים, העותק אצלו נשאר, וההמשך כפוף למדיניות שלו.
     <li><b>ספק בינה מלאכותית (Groq, ארה&quot;ב)</b> – רק אם הפעלתם &quot;עיבוד AI של מסמכים והודעות&quot;. אז הטקסט שאתם שולחים לעוזר החכם נשלח אליו כדי לקבל תשובה. אל תכניסו לעוזר סיסמאות או מספרי כרטיס אשראי.</li>
     <li><b>קריאת אישור עקרוני למשכנתא</b> – רק אם הפעלתם עיבוד AI ובחרתם להעלות מסמך. הטקסט נשלח לאחד מכמה ספקי בינה מלאכותית חינמיים (למשל Groq, Google, OpenRouter) אחרי שהוסרו ממנו מספרי זהות, טלפונים, מיילים, מספרי חשבון וכתובות. הקובץ עצמו לא נשמר אצלנו; נשמרים רק הסכומים, המסלולים והריביות, ואפשר למחוק אותם בכל עת. הוספה של הנתונים האלה, בצורה אנונימית, להשוואה בין משתמשים נעשית רק אם הפעלתם בנפרד &quot;שיתוף אנונימי של נתוני משכנתא&quot;. נתונים שנוספו כך אינם קשורים לחשבון ולכן אי אפשר לאתר או למחוק אותם אחר כך.</li>
     <li><b>Google, Apple ו-Facebook</b> – רק לצורך אימות הכניסה שבחרתם.</li>
@@ -59,13 +60,13 @@
   <h2>כמה זמן שומרים</h2>
   <ul>
     <li>כל עוד החשבון קיים. כניסה במכשיר נשארת עד 90 יום.</li>
-    <li>מחיקת חשבון מוחקת מיד את החשבון ואת כל מה שבו בשרת, כולל אירועי שימוש. מסמכים שנשמרו במכשיר נשארים בו עד שתמחקו אותם באפליקציה, תסירו את האפליקציה או תנקו את נתוני האתר בדפדפן. הוראות בדף <a href="data-deletion.html">מחיקת נתונים</a>.</li>
+    <li>מחיקת חשבון מוחקת מיד את החשבון ואת כל מה שבו בשרת, כולל אירועי שימוש. מסמכים שנשמרו במכשיר נשארים בו עד שתמחקו אותם באפליקציה, תסירו את האפליקציה או תנקו את נתוני האתר בדפדפן. עותק זמני של קבצים שנשלחו לבנק נמחק אוטומטית אחרי 14 ימים, וגם עם מחיקת החשבון. הוראות בדף <a href="data-deletion.html">מחיקת נתונים</a>.</li>
     <li><b>גיבויים:</b> אנחנו שומרים עד 14 עותקי גיבוי יומיים של בסיס הנתונים. נתונים שנמחקו עשויים להישאר בגיבויים עד 14 ימים, ואז הם נדרסים.</li>
     <li>אימייל שנרשם להתעדכנות לפני ההשקה נשמר עד שתבקשו להסירו (כתבו לנו).</li>
   </ul>
 
   <h2>אבטחה</h2>
-  <p>קבצים ומסמכים נשארים במכשיר שלכם ולא נשמרים בשרת, סיסמאות נשמרות מגובבות, התחברות מוגנת בהגבלת ניסיונות, ואפשר לנתק מכשירים ולהגדיר נעילת אפליקציה. אין שיטה מושלמת, ולכן כדאי לבחור סיסמה ארוכה ולא להשתמש בה בשירותים אחרים.</p>
+  <p>קבצים ומסמכים נשארים במכשיר שלכם ולא נשמרים בשרת (עותק זמני של קבצים שבחרתם לשלוח לבנק נשמר מוצפן), סיסמאות נשמרות מגובבות, התחברות מוגנת בהגבלת ניסיונות, ואפשר לנתק מכשירים ולהגדיר נעילת אפליקציה. אין שיטה מושלמת, ולכן כדאי לבחור סיסמה ארוכה ולא להשתמש בה בשירותים אחרים.</p>
 
   <h2>הזכויות שלכם</h2>
   <ul>
@@ -90,7 +91,7 @@
     <li><b>Account:</b> email, name, profile picture (if any), how you signed up (email, Google, Apple or Facebook), language and sign-in dates. A password is stored only as a hash and cannot be read.</li>
     <li><b>Sign in with Facebook:</b> we receive your ID, name, profile picture and email (if you allow sharing it). We use it only to create your account, sign you in and personalise the app. We do not post on your behalf, read your friends or access other Facebook data. <b>We do not send marketing email to an address that came from Facebook, and we do not pass it, your name or your picture to partners or advertisers.</b> The same principle applies to Google and Apple for sign-in.</li>
     <li><b>What you told us about your home:</b> property type, rooms, kids, pets, balcony and garden, interests, and shopping requirements you chose to save.</li>
-    <li><b>What you enter in the app:</b> tasks you ticked, contacts, call and message log, guides you started, budget and funding sources, shopping basket, mortgage scenarios and the mortgage application form. <b>Files and documents you keep in the app stay on your device or browser; they are not sent to us and not stored on a server.</b></li>
+    <li><b>What you enter in the app:</b> tasks you ticked, contacts, call and message log, guides you started, budget and funding sources, shopping basket, mortgage scenarios and the mortgage application form. <b>Files and documents you keep in the app stay on your device or browser; they are not sent to us and not stored on a server. The only exception: when you choose to attach files to a request to a bank, a temporary encrypted copy is kept for it (see below).</b></li>
     <li><b>Usage statistics:</b> events such as &quot;opened a shop offer&quot; or &quot;opened a screen&quot;. Stored <b>only if you agreed</b> to &quot;Anonymous usage analytics&quot;, and never with content (no names, texts or personal amounts).</li>
     <li><b>Acceptance of the terms:</b> we keep the version of the terms you accepted and the date.</li>
     <li><b>Early-access sign-up:</b> if you left an email to get updates before launch, we keep the email and the home-type answers you gave.</li>
@@ -117,7 +118,8 @@
 
   <h2>Who sees it</h2>
   <ul>
-    <li><b>We do</b>, on servers we operate (currently in Israel). Files and documents you keep in the app are not stored by us: they stay on your device.</li>
+    <li><b>We do</b>, on servers we operate (currently in Israel). Files and documents you keep in the app are not stored by us: they stay on your device, except a temporary copy of files you chose to send to a bank (see below).</li>
+    <li><b>A bank or party you chose to send a request to</b> – receives the request details you approved and, if you attached files, a signed link to download a temporary encrypted copy of them. The copy is deleted automatically after 14 days (the default; shown in the app), and also when you delete it in the app, withdraw the sharing consent or delete your account. If the bank has already downloaded the files, its copy remains and is governed by its own policy.</li>
     <li><b>An AI provider (Groq, USA)</b> – only if you turned on &quot;AI processing of documents and messages&quot;. Then the text you send to the smart assistant is sent to the provider to get an answer. Do not put passwords or card numbers into the assistant.</li>
     <li><b>Reading a mortgage approval</b> – only if AI processing is on and you choose to upload a document. The text is sent to one of several free AI providers (for example Groq, Google, OpenRouter) after ID numbers, phone numbers, e-mails, account numbers and addresses have been removed. The file itself is not stored; only the amounts, tracks and rates are kept, and you can delete them at any time. Adding those figures, anonymously, to the comparison between users happens only if you separately turn on &quot;Share mortgage figures anonymously&quot;. Figures added that way are not linked to your account, so they cannot be found or deleted afterwards.</li>
     <li><b>Google, Apple and Facebook</b> – only to verify the sign-in you chose.</li>
@@ -128,13 +130,13 @@
   <h2>How long we keep it</h2>
   <ul>
     <li>As long as the account exists. A device stays signed in for up to 90 days.</li>
-    <li>Deleting an account immediately deletes the account and everything in it on the server, including usage events. Documents kept on your device stay there until you delete them in the app, uninstall the app or clear the site data in your browser. Instructions are on the <a href="data-deletion.html#en">data deletion</a> page.</li>
+    <li>Deleting an account immediately deletes the account and everything in it on the server, including usage events. Documents kept on your device stay there until you delete them in the app, uninstall the app or clear the site data in your browser. A temporary copy of files sent to a bank is deleted automatically after 14 days, and with the account. Instructions are on the <a href="data-deletion.html#en">data deletion</a> page.</li>
     <li><b>Backups:</b> we keep up to 14 daily copies of the database. Deleted data may remain in backups for up to 14 days, then it is overwritten.</li>
     <li>An email left for early-access updates is kept until you ask us to remove it (write to us).</li>
   </ul>
 
   <h2>Security</h2>
-  <p>Files and documents stay on your device and are not stored on a server, passwords are hashed, sign-in is protected by attempt limits, and you can sign out other devices and turn on an app lock. No method is perfect, so choose a long password and do not reuse it elsewhere.</p>
+  <p>Files and documents stay on your device and are not stored on a server (a temporary copy of files you choose to send to a bank is kept encrypted), passwords are hashed, sign-in is protected by attempt limits, and you can sign out other devices and turn on an app lock. No method is perfect, so choose a long password and do not reuse it elsewhere.</p>
 
   <h2>Your rights</h2>
   <ul>
